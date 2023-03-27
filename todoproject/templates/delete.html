@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">
+      Task Deletion
+    </div>
+  <div class="card-body">
+<form method="post">
+  {% csrf_token %}
+  Do you want to delete the movie?
+  <br>
+  <input class="btn btn-primary" type="submit" value="Submit">
+
+</form>
+  </div>
+{% endblock %}
